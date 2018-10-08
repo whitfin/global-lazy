@@ -1,7 +1,7 @@
 defmodule GlobalLazy.MixProject do
   use Mix.Project
 
-  @version "1.0.0"
+  @version "1.0.1"
   @url_docs "http://hexdocs.pm/global_lazy"
   @url_github "https://github.com/whitfin/global-lazy"
 
