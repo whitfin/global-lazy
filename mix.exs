@@ -43,6 +43,11 @@ defmodule GlobalLazy.MixProject do
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
-    [{ :ex_doc, "~> 0.16", optional: true, only: [ :docs ] }]
+    [
+      # Production dependencies for release builds
+      { :global_flags, "~> 1.0" },
+      # Local only dependencies for testing/documentation
+      { :ex_doc, "~> 0.16", optional: true, only: [ :docs ] }
+    ]
   end
 end

@@ -36,9 +36,6 @@ defmodule GlobalLazy do
   your use case appropriately.
   """
 
-  # inline it because it's tiny
-  @compile {:inline, init: 2}
-
   @doc """
   Global initializes a resource using a function.
 
@@ -54,17 +51,7 @@ defmodule GlobalLazy do
   @spec init(binary, (() -> any)) :: :ok
   def init(flag, action)
   when is_binary(flag) and is_function(action, 0) do
-    try do
-      # atom doesn't exist if not running
-      String.to_existing_atom("global_lazy:#{flag}")
-    rescue
-      _ ->
-        # so run the action
-        action.()
-
-        # and set the flag on success
-        String.to_atom("global_lazy:#{flag}")
-    end
+    :global_flags.once(flag, action)
     :ok
   end
 end
