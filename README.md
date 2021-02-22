@@ -1,5 +1,5 @@
 # GlobalLazy
-[![Unix Build Status](https://img.shields.io/travis/whitfin/global-lazy.svg?label=unix)](https://travis-ci.org/whitfin/global-lazy) [![Windows Build Status](https://img.shields.io/appveyor/ci/whitfin/global-lazy.svg?label=win)](https://ci.appveyor.com/project/whitfin/global-lazy) [![Hex.pm Version](https://img.shields.io/hexpm/v/global_lazy.svg)](https://hex.pm/packages/global_lazy) [![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://hexdocs.pm/global_lazy/)
+[![Build Status](https://img.shields.io/github/workflow/status/whitfin/global-lazy/CI)](https://github.com/whitfin/global-lazy/actions) [![Hex.pm Version](https://img.shields.io/hexpm/v/global_lazy.svg)](https://hex.pm/packages/global_lazy) [![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://hexdocs.pm/global_lazy/)
 
 **NOTE:** _This library is deprecated in favour of [whitfin/global-flags](https://github.com/whitfin/global-flags). You should migrate when possible as this library will not receive updates - it only exists to avoid
 breaking existing applications._
